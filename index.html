@@ -36,21 +36,29 @@
                         <p class="free">Try it free for 7days then $20/mo. thereafter</p>
                     </div>
                     <div class="form-type">
-                        <form action="" class="form">
+                        <form action="/action_page.php" method="get" id="nameform" class="form">
                             <div >
-                                <input class="input-type" type="text" placeholder="First Name">
+                                <input class="input-type" type="text" required placeholder="First Name">
+                                <br>
+                                <span class="err_msg">First Name cannot be empty</span>
                             </div>
                             <div >
-                                <input class="input-type" type="text" placeholder="Last Name">
+                                <input class="input-type" type="text" required placeholder="Last Name">
+                                <br>
+                                 <span class="err_msg">Last Name cannot be empty</span>
                             </div>
                             <div>
-                                <input class="input-type" type="email" placeholder="Email">
+                                <input class="input-type" type="email" required placeholder="Email">
+                                <br>
+                                 <span class="err_msg"> Look like this is not an email</span>
                             </div>
                             <div >
-                                <input class="input-type" type="password" placeholder="Password">
+                                <input class="input-type" type="password" required placeholder="Password">
+                                <br>
+                                 <span class="err_msg">Password cannot be empty</span>
                             </div>
                             <div class="btn-submit" >
-                                <input class="input-type submit" type="button" value="Clame your free trial">
+                                <input class="input-type submit" type="submit" form="nameform" value="Clame your free trial">
                             </div>
                             <div class="small">
                                 <small>By clicking the button you are agreeing to our <span class="terms">Terms and Services</span></small>

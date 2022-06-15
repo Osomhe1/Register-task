@@ -61,7 +61,6 @@ font-size: 25x;
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 20px;
-    /* margin-bottom: 10px; */
 }
 
 .section1{
@@ -133,6 +132,26 @@ font-size: 25x;
     padding: 3px;
 }
 
+input[type=text]:required:focus,
+input[type=email]:required:focus,
+input[type=password]:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+
+input[type=text]:focus:invalid,
+ input[type=email]:focus:invalid, 
+input[type=password]:focus:invalid {
+  background: url("./icon-error.svg") no-repeat 95% 50%;
+  background-size: 25px;
+  border-color: hsl(0, 100%, 74%) ;
+  border: 1px solid red;
+}
+
+input:focus:invalid + span::before {
+    display: none;
+}
 
 
 /* responsiveness */
