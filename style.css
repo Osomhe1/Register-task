@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./bg-intro-desktop.png');
 }
 
 a{
@@ -19,6 +29,7 @@ border-radius: 20px;
 
 .btn-bt:hover{
     background-color: rgb(23, 4, 78);
+    background: url('./bg-intro-mobile.png');
 }
 
 .btn{
@@ -27,3 +38,131 @@ border-radius: 20px;
 margin-top: 10px;
 font-size: 25x;
 }
+
+.main{
+    display:grid;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    width: 375px;
+    margin: auto;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.para{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    /* margin-bottom: 10px; */
+}
+
+.section1{
+    padding-bottom: 20px;
+}
+
+.section2{
+    padding-top: 20px;
+}
+
+.trial{
+    background: hsl(248, 32%, 49%);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0px 5px #ffffffaa;
+}
+
+.free{
+    width: 320px;
+    margin: auto;
+}
+
+.form-type{
+    background: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.input-type{
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #aaa;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.input-type:focus{
+    border: 1px solid #aaa;
+}
+
+.form{
+    padding-top: 15px;
+}
+
+.small{
+    color:  hsl(246, 25%, 77%);
+    width: 300px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.terms{
+    color: hsl(0, 100%, 74%) ;
+}
+
+.submit{
+    background: hsl(154, 59%, 51%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 3px;
+}
+
+
+
+/* responsiveness */
+
+@media  (min-width:1440px) {
+
+    body{
+        background-image: url('./bg-intro-desktop.png');
+    }
+    .main{
+        margin: auto;
+        width: 1400px;
+    }
+    .container{
+            width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:40px;
+    }
+
+
+    section{
+        width: 500px;
+        margin: auto;
+    }
+
+    .heading{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+}
+
