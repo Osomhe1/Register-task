@@ -153,6 +153,10 @@ input:focus:invalid + span::before {
     display: none;
 }
 
+input:focus:invalid~.err_msg{
+color: red;
+}
+
 
 /* responsiveness */
 
